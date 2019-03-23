@@ -1,6 +1,6 @@
 # Lord of Cereal (Work in progress)
 Java serialization tool for creating encrypted and HMAC protected payloads.
-*For times when the server doesn't want to eat the cereal we are feeding it.*
+>*"For times when the server doesn't want to eat the cereal we are feeding it."*
 
 ![Alt Text Cereal](https://media.giphy.com/media/BYyf5D33KIais/giphy.gif)
 
@@ -21,7 +21,9 @@ This tool is meant for situations when the encryption and/or HMAC secret from th
 * (Python/Perl coming soon!)
 
 ### Sample command:
-`python Lord_of_Cereal.py -u "http://192.168.1.10:8080/sub.faces" -e DES -s s3cr3tk3y -p commons3 -t javax.faces.ViewState -c "ping 192.168.10.8" -f powershell`
+```python
+python Lord_of_Cereal.py -u "http://192.168.1.10:8080/sub.faces" -e DES -s s3cr3tk3y -p commons3 -t javax.faces.ViewState -c "ping 192.168.10.8" -f powershell
+```
 
 ## To do:
 * Add support for other encryption methods
