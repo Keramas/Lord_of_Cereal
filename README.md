@@ -1,16 +1,20 @@
 # Lord of Cereal
-
-## Java serialization tool for creating encrypted and HMAC protected payloads.
+Java serialization tool for creating encrypted and HMAC protected payloads.
 
 ## Overview:
-This tool is meant for situations when the encryption and/or HMAC secret is leaked from the server (through LFI or other means), and will allow for payloads to be generated and sent to the server.
+This tool is meant for situations when the encryption and/or HMAC secret from the web.xml file is leaked from the server (through LFI or other means). The secret can be used in this tool so that payloads are encrypted and HMAC protected and then sent to the server for execution.  
 
+### Encryption method:
+* DES
+* (Coming soon: AES)
 
-## Payload options:
+### Payload options:
 * Powershell
 * Bash
+* (Python/Perl coming soon!)
 
-
+### Sample command:
+python Lord_of_Cereal.py -u "http://192.168.1.10.:8080/subscribe.faces" -e DES -s s3cr3tk3y -p commons3 -t javax.faces.ViewState -c "ping 192.168.10.8" -f powershell
 
 ## To do:
 * Add support for other encryption methods
