@@ -1,4 +1,4 @@
-# Lord of Cereal (Work in progress)
+# Lord of Cereal
 Java serialization tool for creating encrypted and HMAC protected payloads.
 >*"For times when the server doesn't want to eat the cereal we are feeding it."*
 
