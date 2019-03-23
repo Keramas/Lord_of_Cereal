@@ -8,7 +8,7 @@ This tool is meant for situations when the encryption and/or HMAC secret from th
 * DES
 * (Coming soon: AES)
 
-## Digest method:
+### Digest method:
 * HMAC-SHA1
 * (More to come soon)
 
