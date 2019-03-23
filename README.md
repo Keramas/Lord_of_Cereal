@@ -1,7 +1,8 @@
 # Lord of Cereal (Work in progress)
 Java serialization tool for creating encrypted and HMAC protected payloads.
+*For times when the server doesn't want to eat the cereal we are feeding it.*
 
-<center>![Alt Text Cereal](https://media.giphy.com/media/BYyf5D33KIais/giphy.gif)</center>
+![Alt Text Cereal](https://media.giphy.com/media/BYyf5D33KIais/giphy.gif)
 
 ## Overview:
 This tool is meant for situations when the encryption and/or HMAC secret from the web.xml file is leaked from the server (through LFI or other means). The secret can be used in this tool so that payloads are encrypted and HMAC protected and then sent to the server for execution.  
